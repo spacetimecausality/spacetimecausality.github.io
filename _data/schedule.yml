@@ -1,0 +1,35 @@
+- date: 2025-03-05
+  topic: "Toward Causal Inference for Spatio-Temporal Data: Conflict and Forest Loss in Colombia"
+  speaker: Sumantrak Mukherjee
+  paper: https://www.tandfonline.com/doi/full/10.1080/01621459.2021.2013241
+  slides: https://example.com/slides0524
+  recording: https://example.com/rec0524
+
+- date: 2025-05-17
+  topic: Spatio-temporal tools
+  speaker: Yanan Xin
+  paper: https://arxiv.org/abs/2505.09876
+  slides: https://example.com/slides0517
+  recording: https://example.com/rec0517
+
+- date: 2025-05-17
+  topic: Estimating heterogenous treatment effects for spatio-temporal causal inference
+  speaker: Lingxiao Zhou
+  paper: https://arxiv.org/abs/2505.09876
+  slides: https://example.com/slides0517
+  recording: https://example.com/rec0517
+
+- date: 2025-05-17
+  topic: Bipartite causal inference with interference, time series data, and a random network
+  speaker: Zhaoyan Song
+  paper: https://arxiv.org/abs/2505.09876
+  slides: https://example.com/slides0517
+  recording: https://example.com/rec0517
+
+- date: 2025-05-28
+  topic: "GST-UNet: Spatiotemporal Causal Inference with Time-Varying Confounders"
+  speaker: Gerrit Grossmann
+  paper: https://arxiv.org/pdf/2502.05295
+  slides: https://example.com/slides0517
+  recording: https://example.com/rec0517
+# Add more sessions below in chronological order (oldest to newest)
