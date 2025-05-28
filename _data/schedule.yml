@@ -5,24 +5,31 @@
   slides: https://example.com/slides0524
   recording: https://example.com/rec0524
 
-- date: 2025-05-17
-  topic: Spatio-temporal tools
+- date: 2025-03-19
+  topic: Introduction to Spatio-Temporal Modelling (Session 2)
   speaker: Yanan Xin
-  paper: https://arxiv.org/abs/2505.09876
+  paper: https://www.dropbox.com/scl/fi/84csdggq2ucugrkn8k1v8/20250319_STCI-seminar_intro-to-ST-Modeling_Yanan.pdf?rlkey=v99awmf0qgc8isrtekjultem5&st=7zekc1gr&dl=0
   slides: https://example.com/slides0517
   recording: https://example.com/rec0517
 
-- date: 2025-05-17
+- date: 2025-03-19
+  topic: Causal Inference for Spatio-Temporal Data (Session 1)
+  speaker: Jonas Wahl
+  paper: https://www.dropbox.com/scl/fi/bsrm299j65rvnr9vrrs2y/Jonas-Wahl-Notes-RG2.pdf?rlkey=di1az8narzt5masgmc6mw3rc2&st=hllk6ohz&dl=0
+  slides: https://example.com/slides0517
+  recording: https://example.com/rec0517
+
+- date: 2025-04-16
   topic: Estimating heterogenous treatment effects for spatio-temporal causal inference
   speaker: Lingxiao Zhou
-  paper: https://arxiv.org/abs/2505.09876
+  paper: https://arxiv.org/abs/2412.15128
   slides: https://example.com/slides0517
   recording: https://example.com/rec0517
 
-- date: 2025-05-17
+- date: 2025-05-14
   topic: Bipartite causal inference with interference, time series data, and a random network
   speaker: Zhaoyan Song
-  paper: https://arxiv.org/abs/2505.09876
+  paper: https://arxiv.org/abs/2404.04775
   slides: https://example.com/slides0517
   recording: https://example.com/rec0517
 

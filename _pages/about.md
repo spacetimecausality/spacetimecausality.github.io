@@ -4,15 +4,24 @@ title: STAR Group
 permalink: /
 ---
 
-# ⭐ Space-Time cAusal Reading (STAR) Group
+<h1 style="display: flex; align-items: center; gap: 0.4em;">
+  <img src="/assets/img/STAR.png" alt="STAR Logo" style="height: 1.5em;">
+  <span>
+    <strong>STaR</strong>:
+    <span class="text-primary">S</span>pace-
+    <span class="text-primary">T</span>ime 
+    C<span class="text-primary">a</span>usality 
+    <span class="text-primary">R</span>eading Group
+  </span>
+</h1>
 
 Welcome to the STAR Group — a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet regularly to discuss cutting-edge research and foster interdisciplinary collaboration.
 
 ---
 ## 🗓️ Schedule
+---
 
 {% assign today = 'now' | date: "%Y-%m-%d" %}
-
 {% assign upcoming_sessions = "" | split: "" %}
 
 {% for session in site.data.schedule %}
@@ -36,166 +45,159 @@ Welcome to the STAR Group — a reading group dedicated to exploring **causal in
 {% else %}
   <div class="no-session">
     <h3>No Upcoming Sessions</h3>
-    <p>We currently have no scheduled sessions. Want to speak at a future session? <a href="mailto:contact@yourdomain.com">Contact us here</a>.</p>
+    <p>
+      We currently have no scheduled sessions. Want to speak at a future session?
+      <a href="spacetimecausality@gmail.com">Contact us here</a>.
+    </p>
   </div>
 {% endif %}
 
-### Previous Sessions
-<p>Below are the most recent sessions. Click "Show All Sessions" to view the full history.</p>
+---
+
+### 🔙 Previous Sessions
+
+<p>All past sessions are listed below. Slides and recordings available upon request.</p>
+
+{% assign today = 'now' | date: "%Y-%m-%d" %}
+{% assign past_sessions = "" | split: "" %}
+
+{% for session in site.data.schedule %}
+  {% assign session_date = session.date | date: "%Y-%m-%d" %}
+  {% if session_date < today %}
+    {% assign past_sessions = past_sessions | push: session %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_sessions = past_sessions | sort: "date" | reverse %}
 
 <div style="overflow-x:auto;">
-<table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="text-align: left; padding: 8px;">Date</th>
-      <th style="text-align: left; padding: 8px;">Topic</th>
-      <th style="text-align: left; padding: 8px;">Paper</th>
-      <th style="text-align: left; padding: 8px;">Speaker</th>
-      <th style="text-align: left; padding: 8px;">Slides</th>
-      <th style="text-align: left; padding: 8px;">Recording</th>
-    </tr>
-  </thead>
-
-  <tbody>
-  {% assign reversed_sessions = site.data.schedule | reverse %}
-  {% assign visible = reversed_sessions | slice: 0, 7 %}
-  {% for session in visible %}
-    <tr>
-      <td style="padding: 8px;">{{ session.date }}</td>
-      <td style="padding: 8px;">{{ session.topic }}</td>
-      <td style="padding: 8px;"><a href="{{ session.paper }}">Paper</a></td>
-      <td style="padding: 8px;">{{ session.speaker }}</td>
-      <td style="padding: 8px;"><a href="{{ session.slides }}">Slides</a></td>
-      <td style="padding: 8px;"><a href="{{ session.recording }}">Recording</a></td>
-    </tr>
-  {% endfor %}
-  </tbody>
-
-  <tbody id="older-sessions" style="display: none;">
-  {% assign older = reversed_sessions | slice: 7, reversed_sessions.size %}
-  {% for session in older %}
-    <tr>
-      <td style="padding: 8px;">{{ session.date }}</td>
-      <td style="padding: 8px;">{{ session.topic }}</td>
-      <td style="padding: 8px;"><a href="{{ session.paper }}">Paper</a></td>
-      <td style="padding: 8px;">{{ session.speaker }}</td>
-      <td style="padding: 8px;"><a href="{{ session.slides }}">Slides</a></td>
-      <td style="padding: 8px;"><a href="{{ session.recording }}">Recording</a></td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="text-align: left; padding: 8px; white-space: nowrap;">Date</th>
+        <th style="text-align: left; padding: 8px;">Topic</th>
+        <th style="text-align: left; padding: 8px;">Paper</th>
+        <th style="text-align: left; padding: 8px;">Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in sorted_sessions %}
+        <tr>
+          <td style="padding: 8px; white-space: nowrap;">{{ session.date }}</td>
+          <td style="padding: 8px;">{{ session.topic }}</td>
+          <td style="padding: 8px;"><a href="{{ session.paper }}">Paper</a></td>
+          <td style="padding: 8px;">{{ session.speaker }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
-<button id="toggle-sessions" class="btn" style="margin-top: 1em; background-color: #007acc; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">
-  Show All Sessions
-</button>
+### Upcoming Planned Sessions
 
-<script>
-  const toggleBtn = document.getElementById("toggle-sessions");
-  const olderRows = document.getElementById("older-sessions");
+<p>Here are the upcoming sessions scheduled. Slides and recordings will be shared after the session.</p>
 
-  toggleBtn.addEventListener("click", () => {
-    if (olderRows.style.display === "none") {
-      olderRows.style.display = "table-row-group";
-      toggleBtn.textContent = "Hide Older Sessions";
-    } else {
-      olderRows.style.display = "none";
-      toggleBtn.textContent = "Show All Sessions";
-    }
-  });
-</script>
-<!-- ##  Schedule
+{% assign today = 'now' | date: "%Y-%m-%d" %}
+{% assign future_sessions = "" | split: "" %}
 
-<p>Below are the most recent sessions. Click "Show All Sessions" to view the full history.</p>
+{% for session in site.data.schedule %}
+  {% assign session_date = session.date | date: "%Y-%m-%d" %}
+  {% if session_date >= today %}
+    {% assign future_sessions = future_sessions | push: session %}
+  {% endif %}
+{% endfor %}
+---
+{% assign sorted_future_sessions = future_sessions | sort: "date" %}
 
-<table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Paper</th>
-      <th>Speaker</th>
-      <th>Slides</th>
-      <th>Recording</th>
-    </tr>
-  </thead>
-
-  <tbody>
-  {% assign reversed_sessions = site.data.schedule | reverse %}
-  {% assign visible = reversed_sessions | slice: 0, 7 %}
-  {% for session in visible %}
-    <tr>
-      <td>{{ session.date }}</td>
-      <td>{{ session.topic }}</td>
-      <td>{{ session.speaker }}</td>
-      <td><a href="{{ session.paper }}">Paper</a></td>
-      <td><a href="{{ session.slides }}">Slides</a></td>
-      <td><a href="{{ session.recording }}">Recording</a></td>
-    </tr>
-  {% endfor %}
-  </tbody>
-
-  <tbody id="older-sessions" style="display: none;">
-  {% assign older = reversed_sessions | slice: 7, reversed_sessions.size %}
-  {% for session in older %}
-    <tr>
-      <td>{{ session.date }}</td>
-      <td>{{ session.topic }}</td>
-      <td>{{ session.speaker }}</td>
-      <td><a href="{{ session.paper }}">Paper</a></td>
-      <td><a href="{{ session.slides }}">Slides</a></td>
-      <td><a href="{{ session.recording }}">Recording</a></td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-
-<button id="toggle-sessions" style="margin-top: 1em;">Show All Sessions</button>
-
-<script>
-  const toggleBtn = document.getElementById("toggle-sessions");
-  const olderRows = document.getElementById("older-sessions");
-
-  toggleBtn.addEventListener("click", () => {
-    if (olderRows.style.display === "none") {
-      olderRows.style.display = "table-row-group";
-      toggleBtn.textContent = "Hide Older Sessions";
-    } else {
-      olderRows.style.display = "none";
-      toggleBtn.textContent = "Show All Sessions";
-    }
-  });
-</script> -->
-
-> 📝 *Sessions are bi-weekly on Wednesday 3pm CET.*
+{% if sorted_future_sessions.size > 0 %}
+  <div style="overflow-x:auto;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="text-align: left; padding: 8px; white-space: nowrap;">Date</th>
+        <th style="text-align: left; padding: 8px;">Topic</th>
+        <th style="text-align: left; padding: 8px;">Paper</th>
+        <th style="text-align: left; padding: 8px;">Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in sorted_future_sessions %}
+      <tr>
+        <td style="padding: 8px; white-space: nowrap;">{{ session.date }}</td>
+        <td style="padding: 8px;">{{ session.topic }}</td>
+        <td style="padding: 8px;">
+          {% if session.paper %}
+            <a href="{{ session.paper }}">Paper</a>
+          {% else %}
+            N/A
+          {% endif %}
+        </td>
+        <td style="padding: 8px;">{{ session.speaker }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+{% else %}
+  <p><em>No upcoming sessions planned yet.</em></p>
+{% endif %}
 
 ---
 
+> 📝 *Sessions are fortnightly on Wednesday at 3pm CET.*
+
+
 ## 👥 Organizers
+
+<style>
+  .organizers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .organizer {
+    text-align: center;
+    width: 120px;
+  }
+
+  .organizer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .organizer p {
+    margin-top: 0.5em;
+    font-size: 0.95em;
+  }
+</style>
 
 <div class="organizers">
   <div class="organizer">
-    <img src="assets/img/organizers/alex.jpg" alt="Sumantrak" width="100">
+    <img src="assets/img/sumantrak2.jpeg" alt="Sumantrak">
     <p><strong>Sumantrak Mukherjee</strong><br/>DFKI</p>
   </div>
   <div class="organizer">
-    <img src="assets/img/organizers/lee.png" alt="Gerrit" width="100">
+    <img src="assets/img/gerrit.jpg" alt="Gerrit">
     <p><strong>Gerrit Grossmann</strong><br/>DFKI</p>
   </div>
   <div class="organizer">
-    <img src="assets/img/organizers/nora.jpg" alt="Yanan" width="100">
+    <img src="assets/img/yanan.jpeg" alt="Yanan">
     <p><strong>Yanan Xin</strong><br/>TU Delft</p>
   </div>
   <div class="organizer">
-    <img src="assets/img/organizers/nora.jpg" alt="Jonas" width="100">
+    <img src="assets/img/jonas.jpeg" alt="Jonas">
     <p><strong>Jonas Wahl</strong><br/>DFKI</p>
   </div>
   <div class="organizer">
-    <img src="assets/img/organizers/nora.jpg" alt="Sebastian" width="100">
+    <img src="assets/img/sebastian.jpg" alt="Sebastian">
     <p><strong>Sebastian Vollmer</strong><br/>DFKI, RPTU</p>
   </div>
 </div>
+
 
 <style>
 .organizers {
