@@ -8,8 +8,7 @@ permalink: /
   <img src="/assets/img/STAR.png" alt="STAR Logo" style="height: 1.5em;">
   <span>
     <strong>STAR</strong>:
-    <span class="text-primary">S</span>pace-
-    <span class="text-primary">T</span>ime 
+    <span class="text-primary">S</span>pace-<span class="text-primary">T</span>ime 
     C<span class="text-primary">a</span>usality 
     <span class="text-primary">R</span>eading Group
   </span>
