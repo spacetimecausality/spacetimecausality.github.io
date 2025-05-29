@@ -7,7 +7,7 @@ permalink: /
 <h1 style="display: flex; align-items: center; gap: 0.4em;">
   <img src="/assets/img/STAR.png" alt="STAR Logo" style="height: 1.5em;">
   <span>
-    <strong>STaR</strong>:
+    <strong>STAR</strong>:
     <span class="text-primary">S</span>pace-
     <span class="text-primary">T</span>ime 
     C<span class="text-primary">a</span>usality 
@@ -15,7 +15,7 @@ permalink: /
   </span>
 </h1>
 
-Welcome to the STAR Group — a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet regularly to discuss cutting-edge research and foster interdisciplinary collaboration.
+Welcome to STAR — a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet regularly to discuss cutting-edge research (or whatever we find interesting) and foster interdisciplinary collaboration.
 
 ---
 ## 🗓️ Schedule
