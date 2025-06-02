@@ -9,7 +9,7 @@ permalink: /
   <span>
     <strong>STAR</strong>: 
     <span class="text-primary">S</span>pace&#8209;<span class="text-primary">T</span>ime 
-    <span class="text-primary">C</span>ausality 
+    C<span class="text-primary">a</span>usality 
     <span class="text-primary">R</span>eading Group
   </span>
 </h1>
