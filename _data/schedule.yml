@@ -2,41 +2,37 @@
   topic: "Toward Causal Inference for Spatio-Temporal Data: Conflict and Forest Loss in Colombia"
   speaker: Sumantrak Mukherjee
   paper: https://www.tandfonline.com/doi/full/10.1080/01621459.2021.2013241
-  slides: https://example.com/slides0524
+  slides: assets/pdf/CausalSpatioTemporalRG1.pdf
   recording: https://example.com/rec0524
 
 - date: 2025-03-19
   topic: Introduction to Spatio-Temporal Modelling (Session 2)
   speaker: Yanan Xin
-  paper: https://www.dropbox.com/scl/fi/84csdggq2ucugrkn8k1v8/20250319_STCI-seminar_intro-to-ST-Modeling_Yanan.pdf?rlkey=v99awmf0qgc8isrtekjultem5&st=7zekc1gr&dl=0
-  slides: https://example.com/slides0517
+  slides: assets/pdf/20250319_STCI seminar_intro to ST Modeling_Yanan.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-03-19
   topic: Causal Inference for Spatio-Temporal Data (Session 1)
   speaker: Jonas Wahl
-  paper: https://www.dropbox.com/scl/fi/bsrm299j65rvnr9vrrs2y/Jonas-Wahl-Notes-RG2.pdf?rlkey=di1az8narzt5masgmc6mw3rc2&st=hllk6ohz&dl=0
-  slides: https://example.com/slides0517
+  slides: assets/pdf/Jonas Wahl Notes - RG2.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-04-16
   topic: Estimating heterogenous treatment effects for spatio-temporal causal inference
   speaker: Lingxiao Zhou
   paper: https://arxiv.org/abs/2412.15128
-  slides: https://example.com/slides0517
   recording: https://example.com/rec0517
 
 - date: 2025-05-14
   topic: Bipartite causal inference with interference, time series data, and a random network
   speaker: Zhaoyan Song
   paper: https://arxiv.org/abs/2404.04775
-  slides: https://example.com/slides0517
   recording: https://example.com/rec0517
 
 - date: 2025-05-28
   topic: "GST-UNet: Spatiotemporal Causal Inference with Time-Varying Confounders"
   speaker: Gerrit Grossmann
   paper: https://arxiv.org/pdf/2502.05295
-  slides: https://example.com/slides0517
+  slides: assets/pdf/2025.05.28_gerrit_gstunet_talk.pdf
   recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
