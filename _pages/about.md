@@ -15,7 +15,7 @@ permalink: /
 </h1>
 
 
-Welcome to the STAR Group, a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet **every other Wednesday at 15:00 CET** to discuss cutting-edge research and foster interdisciplinary collaboration.
+Welcome to the STAR Group, a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet **every other Wednesday at 15:00 CET** on Microsoft Teams.
 
 <div style="margin-top: 2em;"></div>
 ---
@@ -188,7 +188,7 @@ We ask that participants read or skim the paper in advance so we can focus on me
 ### Joining the Group
 
 To join, just email us at <span id="email-link">email us</span> with your name, affiliation, and a few words about your interest.<br>
-We look forward to welcoming new faces — we do ask for regular participation and active engagement.</p>
+We look forward to welcoming new faces ; we do ask for regular participation and active engagement.
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
