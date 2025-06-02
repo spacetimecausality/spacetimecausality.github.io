@@ -64,8 +64,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
   <div class="no-session">
     <h3>No Upcoming Sessions</h3>
     <p>
-      We currently have no scheduled sessions. Want to speak at a future session?
-      <a href="mailto:spacetimecausality@gmail.com">Contact us here</a>
+      We currently have no scheduled sessions. Want to speak at a future session? Please drop us an email.
     </p>
   </div>
 {% endif %}
@@ -193,9 +192,22 @@ We ask that participants read or skim the paper in advance so we can focus on me
 
 ### Joining the Group
 
-We meet every other Wednesday at 15:00 CET on Microsoft Teams.  
-To join, just [email us](mailto:spacetimecausality@gmail.com) with your name, affiliation, and a few words about your interest.  
-Membership is invite-only, but we’re happy to welcome new faces! We do ask for regular participation and active engagement.
+<p>We meet every other Wednesday at 15:00 CET on Microsoft Teams.<br>
+To join, just <span id="email-link">email us</span> with your name, affiliation, and a few words about your interest.<br>
+We look forward to welcoming new faces — we do ask for regular participation and active engagement.</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const user = "spacetimecausality";
+    const domain = "gmail.com";
+    const email = `${user}@${domain}`;
+    const link = document.createElement("a");
+    link.href = `mailto:${email}`;
+    link.textContent = "email us";
+    document.getElementById("email-link").replaceWith(link);
+  });
+</script>
+
 
 **Want to present a paper or lead a session?** Let us know!
 

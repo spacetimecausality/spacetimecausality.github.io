@@ -22,4 +22,4 @@ Below is a running list of paper suggestions. Checkboxes help us track what we'v
 - [ ] 2025 – *GST-UNet: Spatiotemporal Causal Inference with Time-Varying Confounders*  
 - [ ] 2024 – *GGPR GA (Jiao & Tao)*  
 
-> Want to suggest a paper or lead a session? [Email us](mailto:spacetimecausality@gmail.com).
+> Want to suggest a paper or lead a session? Drop us an email.
