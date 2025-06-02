@@ -15,7 +15,7 @@ permalink: /
 </h1>
 
 
-Welcome to the STAR Group, a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet regularly to discuss cutting-edge research and foster interdisciplinary collaboration.
+Welcome to the STAR Group, a reading group dedicated to exploring **causal inference in spatio-temporal systems**, including methodological, theoretical, and applied perspectives. We meet **every other Wednesday at 15:00 CET** to discuss cutting-edge research and foster interdisciplinary collaboration.
 
 <div style="margin-top: 2em;"></div>
 ---
@@ -173,12 +173,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
 {% else %}
   <p><em>No upcoming sessions planned yet.</em></p>
 {% endif %} -->
-
----
-
-> 📝 *Sessions are fortnightly on Wednesday at 3pm CET.*
-
----
+ --- 
 <div style="margin-top: 2em;"></div>
 
 ## 🙌 How to Participate
@@ -192,8 +187,7 @@ We ask that participants read or skim the paper in advance so we can focus on me
 
 ### Joining the Group
 
-<p>We meet every other Wednesday at 15:00 CET on Microsoft Teams.<br>
-To join, just <span id="email-link">email us</span> with your name, affiliation, and a few words about your interest.<br>
+To join, just email us at <span id="email-link">email us</span> with your name, affiliation, and a few words about your interest.<br>
 We look forward to welcoming new faces — we do ask for regular participation and active engagement.</p>
 
 <script>
@@ -201,10 +195,9 @@ We look forward to welcoming new faces — we do ask for regular participation a
     const user = "spacetimecausality";
     const domain = "gmail.com";
     const email = `${user}@${domain}`;
-    const link = document.createElement("a");
-    link.href = `mailto:${email}`;
-    link.textContent = "email us";
-    document.getElementById("email-link").replaceWith(link);
+    const strong = document.createElement("strong");
+    strong.textContent = email;
+    document.getElementById("email-link").replaceWith(strong);
   });
 </script>
 
@@ -243,35 +236,45 @@ We look forward to welcoming new faces — we do ask for regular participation a
 
 <div class="organizers">
   <div class="organizer">
-    <img src="assets/img/sumantrak2.jpeg" alt="Sumantrak">
+    <a href="https://www.linkedin.com/in/sumantrak/" target="_blank">
+      <img src="assets/img/sumantrak2.jpeg" alt="Sumantrak">
+    </a>
     <p>
       <strong><a href="https://www.linkedin.com/in/sumantrak/" target="_blank">Sumantrak Mukherjee</a></strong><br/>
       DFKI
     </p>
   </div>
   <div class="organizer">
-    <img src="assets/img/gerrit.jpg" alt="Gerrit">
+    <a href="https://gerritgrossmann.de/" target="_blank">
+      <img src="assets/img/gerrit.jpg" alt="Gerrit">
+    </a>
     <p>
       <strong><a href="https://gerritgrossmann.de/" target="_blank">Gerrit Grossmann</a></strong><br/>
       DFKI
     </p>
   </div>
   <div class="organizer">
-    <img src="assets/img/yanan.jpeg" alt="Yanan">
+    <a href="https://www.linkedin.com/in/yanan-xin-giscientist/" target="_blank">
+      <img src="assets/img/yanan.jpeg" alt="Yanan">
+    </a>
     <p>
       <strong><a href="https://www.linkedin.com/in/yanan-xin-giscientist/" target="_blank">Yanan Xin</a></strong><br/>
       TU Delft
     </p>
   </div>
   <div class="organizer">
-    <img src="assets/img/jonas.jpeg" alt="Jonas">
+    <a href="https://jonaswahl.com/" target="_blank">
+      <img src="assets/img/jonas.jpeg" alt="Jonas">
+    </a>
     <p>
       <strong><a href="https://jonaswahl.com/" target="_blank">Jonas Wahl</a></strong><br/>
       DFKI
     </p>
   </div>
   <div class="organizer">
-    <img src="assets/img/sebastian.jpg" alt="Sebastian">
+    <a href="https://dsa.dfki.de/author/sebastian-vollmer/" target="_blank">
+      <img src="assets/img/sebastian.jpg" alt="Sebastian">
+    </a>
     <p>
       <strong><a href="https://dsa.dfki.de/author/sebastian-vollmer/" target="_blank">Sebastian Vollmer</a></strong><br/>
       DFKI, RPTU
