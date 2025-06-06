@@ -35,4 +35,16 @@
   paper: https://arxiv.org/pdf/2502.05295
   slides: assets/pdf/2025.05.28_gerrit_gstunet_talk.pdf
   recording: https://example.com/rec0517
+
+- date: 2025-06-23
+  topic: "Causal discovery of vector valued variables and consistency-guided aggregation"
+  speaker: Urmi Ninad
+  paper: https://arxiv.org/abs/2505.10476
+  recording: https://example.com/rec0517
+
+- date: 2025-05-28
+  topic: "Spatiotemporal Causal Inference with Arbitrary Spillover and Carryover Effects"
+  speaker: Mitsuru Mukaigawara
+  paper: https://arxiv.org/abs/2504.03464
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
