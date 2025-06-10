@@ -70,7 +70,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
 {% endif %}
 
 ---
-<div style="margin-top: 2em;"></div>
+<!-- <div style="margin-top: 2em;"></div>
 ### 🔙 Previous Sessions
 
 <p>All past sessions are listed below. Slides and recordings are available upon request if not directly linked.</p>
@@ -124,7 +124,120 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
       {% endfor %}
     </tbody>
   </table>
+</div> -->
+<div style="margin-top: 2em;"></div>
+### 📅 Schedule
+
+<p>All sessions are listed below. Slides and recordings are available upon request if not directly linked.</p>
+
+{% assign reference_date = '2025-03-05' %}
+{% assign reference_epoch = reference_date | date: "%s" %}
+{% assign today_epoch = 'now' | date: "%s" %}
+{% assign seconds_since = today_epoch | minus: reference_epoch %}
+{% assign days_since = seconds_since | divided_by: 86400 %}
+{% assign fortnights_since = days_since | divided_by: 14 %}
+{% assign next_fortnight = fortnights_since | ceil %}
+{% assign days_until_next = next_fortnight | times: 14 %}
+{% assign seconds_until_next = days_until_next | times: 86400 %}
+{% assign next_session_epoch = reference_epoch | plus: seconds_until_next %}
+{% assign next_wednesday = next_session_epoch | date: "%Y-%m-%d" %}
+
+
+{%- assign upcoming = "" | split: "" -%}
+{%- assign past = "" | split: "" -%}
+{%- assign has_next_wed = false -%}
+
+{% for session in site.data.schedule %}
+  {% assign session_date = session.date | date: "%Y-%m-%d" %}
+  {% if session_date >= today %}
+    {% assign upcoming = upcoming | push: session %}
+    {% if session_date == next_wednesday %}
+      {% assign has_next_wed = true %}
+    {% endif %}
+  {% else %}
+    {% assign past = past | push: session %}
+  {% endif %}
+{% endfor %}
+
+{% assign upcoming = upcoming | sort: "date" | reverse %}
+{% assign past = past | sort: "date" | reverse %}
+
+<div style="overflow-x:auto; margin-top: 2em;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="text-align: left; padding: 8px;">Date</th>
+        <th style="text-align: left; padding: 8px;">Topic</th>
+        <th style="text-align: left; padding: 8px;">Resources</th>
+        <th style="text-align: left; padding: 8px;">Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Upcoming Sessions -->
+      {% for session in upcoming %}
+        {% assign session_date = session.date | date: "%Y-%m-%d" %}
+        {% if session_date == next_wednesday %}
+          <!-- Inject Highlighted Next Wednesday Row -->
+          <tr style="background-color: #e6f2ff;">
+            <td style="padding: 8px; white-space: nowrap;">{{ session_date }}</td>
+            <td style="padding: 8px;">
+              {{ session.topic }}
+              <span style="color: #007acc; font-weight: bold;">(Next Wednesday)</span>
+            </td>
+            <td style="padding: 8px;">
+              {% if session.paper %}<a href="{{ session.paper }}">Paper</a>{% endif %}
+              {% if session.paper and session.slides %}, {% endif %}
+              {% if session.slides %}<a href="{{ session.slides }}">Slides</a>{% endif %}
+            </td>
+            <td style="padding: 8px;">{{ session.speaker }}</td>
+          </tr>
+        {% else %}
+          <tr>
+            <td style="padding: 8px; white-space: nowrap;">{{ session_date }}</td>
+            <td style="padding: 8px;">
+              {{ session.topic }}
+              <span style="color: #007acc; font-weight: bold;">(Upcoming)</span>
+            </td>
+            <td style="padding: 8px;">
+              {% if session.paper %}<a href="{{ session.paper }}">Paper</a>{% endif %}
+              {% if session.paper and session.slides %}, {% endif %}
+              {% if session.slides %}<a href="{{ session.slides }}">Slides</a>{% endif %}
+            </td>
+            <td style="padding: 8px;">{{ session.speaker }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+
+      {% unless has_next_wed %}
+        <tr style="background-color: #fff3cd;">
+          <td style="padding: 8px; white-space: nowrap;">{{ next_wednesday }}</td>
+          <td colspan="3" style="padding: 8px; font-style: italic; color: #555;">
+            No talk scheduled for next Wednesday.
+          </td>
+        </tr>
+      {% endunless %}
+
+      <!-- Past Sessions -->
+      {% for session in past %}
+        {% assign session_date = session.date | date: "%Y-%m-%d" %}
+        <tr>
+          <td style="padding: 8px; white-space: nowrap;">{{ session_date }}</td>
+          <td style="padding: 8px;">{{ session.topic }}</td>
+          <td style="padding: 8px;">
+            {% if session.paper %}<a href="{{ session.paper }}">Paper</a>{% endif %}
+            {% if session.paper and session.slides %}, {% endif %}
+            {% if session.slides %}<a href="{{ session.slides }}">Slides</a>{% endif %}
+            {% unless session.paper or session.slides %}
+              <a href="mailto:spacetimecausality@gmail.com?subject=Resource%20Request%20for%20{{ session.topic | uri_escape }}">Request</a>
+            {% endunless %}
+          </td>
+          <td style="padding: 8px;">{{ session.speaker }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
+
 
 <!-- ### Upcoming Planned Sessions
 
