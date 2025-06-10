@@ -137,6 +137,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
 {% assign days_since = seconds_since | divided_by: 86400 %}
 {% assign fortnights_since = days_since | divided_by: 14 %}
 {% assign next_fortnight = fortnights_since | ceil %}
+{% assign next_fortnight = next_fortnight | plus: 1 %}
 {% assign days_until_next = next_fortnight | times: 14 %}
 {% assign seconds_until_next = days_until_next | times: 86400 %}
 {% assign next_session_epoch = reference_epoch | plus: seconds_until_next %}
