@@ -36,7 +36,13 @@
   slides: assets/pdf/2025.05.28_gerrit_gstunet_talk.pdf
   recording: https://example.com/rec0517
 
-- date: 2025-06-23
+- date: 2025-06-25
+  topic: "Causal Spaces: A Measure-Theoretic Axiomatisation of Causality"
+  speaker: Junhyung Park
+  paper: https://arxiv.org/abs/2305.17139
+  recording: https://example.com/rec0517
+
+- date: 2025-07-23
   topic: "Causal discovery of vector valued variables and consistency-guided aggregation"
   speaker: Urmi Ninad
   paper: https://arxiv.org/abs/2505.10476
