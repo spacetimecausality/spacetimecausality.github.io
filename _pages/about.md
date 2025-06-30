@@ -71,7 +71,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
 
 ---
 <!-- <div style="margin-top: 2em;"></div>
-### 🔙 Previous Sessions
+### 🔙 Previous Session
 
 <p>All past sessions are listed below. Slides and recordings are available upon request if not directly linked.</p>
 
