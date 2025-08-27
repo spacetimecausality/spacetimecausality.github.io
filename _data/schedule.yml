@@ -59,4 +59,10 @@
   speaker: Salvador Balkus
   paper: https://arxiv.org/abs/2412.02105
   recording: https://example.com/rec0517
+
+- date: 2025-09-17
+  topic: "Deconditional Downscaling with Gaussian Processes"
+  speaker: Siu Lun Chau
+  paper: https://arxiv.org/abs/2105.12909
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
