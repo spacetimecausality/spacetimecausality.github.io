@@ -183,7 +183,7 @@ Welcome to the STAR Group, a reading group dedicated to exploring **causal infer
             <td style="padding: 8px; white-space: nowrap;">{{ session_date }}</td>
             <td style="padding: 8px;">
               {{ session.topic }}
-              <span style="color: #007acc; font-weight: bold;">(Next Wednesday)</span>
+              <span style="color: #007acc; font-weight: bold;">(Next Session)</span>
             </td>
             <td style="padding: 8px;">
               {% if session.paper %}<a href="{{ session.paper }}">Paper</a>{% endif %}
