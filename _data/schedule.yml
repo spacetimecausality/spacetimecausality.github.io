@@ -65,4 +65,10 @@
   speaker: Siu Lun Chau
   paper: https://arxiv.org/abs/2105.12909
   recording: https://example.com/rec0517
+
+- date: 2025-10-15
+  topic: "CLAM: Causal Spatial Disaggregation to Infer Local Effects From Coarse Data"
+  speaker: Sumantrak Mukherjee
+  paper: https://github.com/spacetimecausality/spacetimecausality.github.io/blob/main/assets/pdf/CLAM.pdf
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
