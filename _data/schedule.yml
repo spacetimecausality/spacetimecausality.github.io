@@ -71,4 +71,10 @@
   speaker: Sumantrak Mukherjee
   paper: https://github.com/spacetimecausality/spacetimecausality.github.io/blob/main/assets/pdf/CLAM.pdf
   recording: https://example.com/rec0517
+
+- date: 2025-10-29
+  topic: "Nonlinear Causal Discovery for Grouped Data"
+  speaker: Konstantin Göbler
+  paper: https://arxiv.org/abs/2506.05120
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
