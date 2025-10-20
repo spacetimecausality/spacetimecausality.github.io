@@ -77,4 +77,10 @@
   speaker: Konstantin Göbler
   paper: https://arxiv.org/abs/2506.05120
   recording: https://example.com/rec0517
+
+- date: 2025-11-26
+  topic: "Identifying Macro Causal Effects in C-DMGs over DMGs"
+  speaker: Simon Ferreira
+  paper: https://arxiv.org/abs/2506.19650
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
