@@ -83,4 +83,10 @@
   speaker: Simon Ferreira
   paper: https://arxiv.org/abs/2504.01551
   recording: https://example.com/rec0517
+
+- date: 2025-12-10
+  topic: "DoFlow: Causal Generative Flows for Interventional and Counterfactual Time-Series Prediction"
+  speaker: Dongze Wu
+  paper: https://arxiv.org/abs/2511.02137
+  recording: https://example.com/rec0517
 # Add more sessions below in chronological order (oldest to newest)
