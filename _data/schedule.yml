@@ -20,6 +20,7 @@
 - date: 2025-04-16
   topic: Estimating heterogenous treatment effects for spatio-temporal causal inference
   speaker: Lingxiao Zhou
+  slides: assets/pdf/04162025_Heterogeneity_slides.pdf
   paper: https://arxiv.org/abs/2412.15128
   recording: https://example.com/rec0517
 
@@ -27,6 +28,7 @@
   topic: Bipartite causal inference with interference, time series data, and a random network
   speaker: Zhaoyan Song
   paper: https://arxiv.org/abs/2404.04775
+  slides: assets/pdf/Bipartite_RandomNetwork_presentation.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-05-28
@@ -40,24 +42,28 @@
   topic: "Causal Spaces: A Measure-Theoretic Axiomatisation of Causality"
   speaker: Junhyung Park
   paper: https://arxiv.org/abs/2305.17139
+  slides: assets/pdf/grcai.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-07-23
   topic: "Causal discovery of vector valued variables and consistency-guided aggregation"
   speaker: Urmi Ninad
   paper: https://arxiv.org/abs/2505.10476
+  slides: assets/pdf/ADAG_presentation_2.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-08-06
   topic: "Spatiotemporal Causal Inference with Arbitrary Spillover and Carryover Effects"
   speaker: Mitsuru Mukaigawara
   paper: https://arxiv.org/abs/2504.03464
+  slides: assets/pdf/DKFI_mitsuru.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-09-03
   topic: "The causal effects of modified treatment policies under network interference"
   speaker: Salvador Balkus
   paper: https://arxiv.org/abs/2412.02105
+  slides: assets/pdf/The causal effects of modified treatment policies under network interference.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-09-17
@@ -70,6 +76,7 @@
   topic: "CLAM: Causal Spatial Disaggregation to Infer Local Effects From Coarse Data"
   speaker: Sumantrak Mukherjee
   paper: https://github.com/spacetimecausality/spacetimecausality.github.io/blob/main/assets/pdf/CLAM.pdf
+  slides: assets/pdf/clam.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-10-29
