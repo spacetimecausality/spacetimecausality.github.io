@@ -70,6 +70,7 @@
   topic: "Deconditional Downscaling with Gaussian Processes"
   speaker: Siu Lun Chau
   paper: https://arxiv.org/abs/2105.12909
+  slides: assets/pdf/2025-spatiotemporal-causality.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-10-15
@@ -83,17 +84,20 @@
   topic: "Nonlinear Causal Discovery for Grouped Data"
   speaker: Konstantin Göbler
   paper: https://arxiv.org/abs/2506.05120
+  slides: assets/pdf/main.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-11-26
   topic: "Identifying Macro Causal Effects in C-DMGs over DMGs"
   speaker: Simon Ferreira
   paper: https://arxiv.org/abs/2504.01551
+  slides: assets/pdf/Causal reasoning with cyclic graphs.pdf
   recording: https://example.com/rec0517
 
 - date: 2025-12-10
   topic: "DoFlow: Causal Generative Flows for Interventional and Counterfactual Time-Series Prediction"
   speaker: Dongze Wu
   paper: https://arxiv.org/abs/2511.02137
+  slides: assets/pdf/Causal Time Series.pdf
   recording: https://example.com/rec051
 # Add more sessions below in chronological order (oldest to newest)
